@@ -1,0 +1,24 @@
+﻿Build started 10/11/2012 2:40:18 PM.
+     1>Project "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\ECDSA_cuda_implementation.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ECDSA_cuda_implementation.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\kernel.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\airwizard\AppData\Local\Temp\44acf30025bf44f898d1b07b552f51e1.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\kernel.cu.obj" "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\kernel.cu"
+         
+         C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\kernel.cu.obj" "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\kernel.cu" 
+         kernel.cu
+     1>C:/Users/airwizard/documents/visual studio 2010/Projects/ECDSA_cuda_implementation/ECDSA_cuda_implementation/kernel.cu(19): error : calling a host function("printf") from a __device__/__global__ function("polyadd_F2m") is not allowed
+         
+         1 error detected in the compilation of "C:/Users/AIRWIZ~1/AppData/Local/Temp/tmpxft_000016bc_00000000-3_kernel.cpp1.ii".
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\CUDA 4.2.targets(361,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\kernel.cu.obj" "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\kernel.cu"" exited with code 2.
+     1>Done Building Project "C:\Users\airwizard\documents\visual studio 2010\Projects\ECDSA_cuda_implementation\ECDSA_cuda_implementation\ECDSA_cuda_implementation.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.98

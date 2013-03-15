@@ -1,0 +1,37 @@
+delta = Z1^2
+gamma = Y1^2
+
+
+
+t0 = X1-delta
+t5 = Y1+Z1
+
+t1 = X1+delta
+NOP//t1=x1+delta to save access to shared memory?
+
+t2 = t0*t1
+beta = X1*gamma
+
+alpha = 3*t2
+t4 = 8*beta
+
+t3 = alpha^2
+t6 = t5^2
+
+X3 = t3-t4
+t7 = t6-gamma
+
+NOP
+t8 = 4*beta
+
+Z3 = t7-delta
+t9 = t8-X3
+
+
+t10 = gamma^2
+t12 = alpha*t9
+
+
+t11 = 8*t10
+
+Y3 = t12-t11
